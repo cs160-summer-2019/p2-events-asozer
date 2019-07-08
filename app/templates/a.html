@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 	<title>Task 1</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -64,7 +65,64 @@
 
 <script type="text/javascript">
 	// your solution here
+  $(document).ready(() => {
+    
+    
+    $(".p2-circle.bg-purple").on("click",()=>{
+      $(".p2-circle.bg-purple").hide();
+    });
+    
+    $(".p2-circle.bg-green").on("click",()=>{
+      $(".p2-circle.bg-green").hide();
+      $(".p2-circle.bg-blue").hide();
+    });
+    
+    $(".p2-circle.bg-orange.p2-border").on("click",()=>{
+      $(".p2-circle.bg-orange.p2-border").hide();
+    });
+    
+//     var target = $(e.target), article;
+
+//     if (target.is(".p2-circle.bg-orange.p2-border")) {
+//       $(".p2-circle.bg-orange.p2-border").hide();
+//       $(target).show();
+//     };
+    
+    
+    $(".p2-circle#gradient-circle").on("mouseover",()=>{
+      $(".p2-circle#gradient-circle").hide();
+    });
+    
+    $(".btn.btn-light.float-right").on("click",()=>{
+      $(".p2-circle#gradient-circle").show();
+      $(".p2-circle.bg-orange.p2-border").show();
+      $(".p2-circle.bg-green").show();
+      $(".p2-circle.bg-blue").show();
+      $(".p2-circle.bg-purple").show();
+    });
+    
+
+    
+
+    
+});
 
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
